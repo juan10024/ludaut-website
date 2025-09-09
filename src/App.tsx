@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { AppRouter } from './routes/AppRouter';
 import { PreLoader } from './components/ui/PreLoader';
+import { CustomCursor } from './components/ui/CustomCursor';
 
 /**
  * The root component of the application.
@@ -14,13 +15,14 @@ function App() {
     // Simulate initial data loading
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1500); // Adjust time as needed
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <ThemeProvider>
+      <CustomCursor />
       {isLoading ? <PreLoader /> : <AppRouter />}
     </ThemeProvider>
   );

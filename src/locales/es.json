@@ -11,11 +11,66 @@
     "cta_services": "Nuestros Servicios",
     "cta_contact": "Solicitar Consulta"
   },
+  "about": {
+    "title": "Quiénes Somos",
+    "description": "Ludaut Automatización y Seguridad SAS es una empresa enfocada en la seguridad electrónica, automatización e integración de sistemas en diferentes sectores como el hotelero, restaurantero, recreacional, comercial, turístico, residencial e industrial, con casi 5 años de experiencia. Creemos que la seguridad y el bienestar de nuestros clientes son la base para construir el mañana.",
+    "mission": {
+      "title": "Nuestra Misión",
+      "text": "Diseñar, instalar y mantener tecnologías de punta en protección y automatización, creando experiencias personalizadas que inspiren confianza, fomenten relaciones duraderas y permitan a nuestros clientes operar con total tranquilidad y eficiencia."
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "text": "Ser referentes en Latinoamérica en soluciones de seguridad electrónica integrales, donde la innovación y la cercanía con nuestros clientes transformen sus espacios en entornos inteligentes, confiables y preparados para los desafíos del futuro."
+    },
+     "values": {
+      "title": "Nuestros Valores Corporativos",
+      "innovation": { "title": "Innovación", "text": "Nos mantenemos a la vanguardia de la tecnología, explorando y aplicando soluciones disruptivas que anticipen las necesidades de nuestros clientes." },
+      "responsibility": { "title": "Responsabilidad", "text": "Ponemos a nuestros clientes en el centro del proyecto, escuchamos activamente y construimos alianzas basadas en la empatía y la confianza." },
+      "professionalism": { "title": "Profesionalismo", "text": "Actuamos con integridad y disciplina, garantizando un trato transparente y honesto con nuestros clientes y colaboradores." },
+      "excellence": { "title": "Excelencia", "text": "Buscamos la máxima calidad en nuestros procesos y resultados, optimizando recursos y superando expectativas." },
+      "commitment": { "title": "Compromiso", "text": "Nuestra pasión es proteger lo que más valoran nuestros clientes, diseñando soluciones robustas y confiables." },
+      "adaptability": { "title": "Adaptabilidad", "text": "Nos ajustamos con agilidad a los cambios tecnológicos y a las particularidades de cada cliente, ofreciendo respuestas rápidas y efectivas." }
+    },
+    "founders": {
+      "title": "Conoce a Nuestros Fundadores",
+      "text": "Fundada por tres ingenieros apasionados por la tecnología, Ludaut nació del deseo de afrontar la seguridad de una forma más cercana, humana y diseñada a la medida de sus necesidades. En cada proyecto, buscamos construir relaciones de confianza para crecer juntos y proteger lo más valioso: su tranquilidad.",
+      "role": "Gerente General",
+      "alt": "Fundadores de Ludaut"
+    }
+  },
+  "services": {
+    "title": "Nuestras Soluciones",
+    "subtitle": "Ofrecemos una amplia gama de servicios integrados para garantizar su seguridad y optimizar sus operaciones.",
+    "cctv": { "title": "CCTV - Video Vigilancia", "description": "Sistemas de cámaras de alta definición, visión nocturna y acceso remoto para supervisión en tiempo real desde cualquier dispositivo." },
+    "accessControl": { "title": "Control de Acceso y de Personal", "description": "Soluciones especializadas para gestionar el ingreso a instalaciones con biometría, RFID y reconocimiento facial." },
+    "fireDetection": { "title": "Detección y Prevención de Incendios", "description": "Sistemas que cumplen con los más altos estándares de calidad para garantizar la detección temprana y respuesta ante incendios." },
+    "intrusionSystems": { "title": "Sistemas de Intrusión", "description": "Detección en tiempo real de accesos no autorizados mediante sensores de movimiento, contactos magnéticos y barreras infrarrojas." },
+    "systemsIntegrator": { "title": "Integrador de Sistemas (BMS/VMS)", "description": "Unificamos múltiples sistemas tecnológicos (BMS, VMS, EMS) en un solo entorno operativo inteligente." },
+    "domotics": { "title": "Domótica e Inmótica", "description": "Transformamos espacios residenciales y corporativos en entornos inteligentes, eficientes y adaptativos." },
+    "networking": { "title": "Redes y Cableado Estructurado", "description": "Diseño e instalación de infraestructuras de red sólidas, organizadas y escalables bajo estándares internacionales." },
+    "ai": { "title": "Inteligencia Artificial", "description": "Aplicamos IA para potenciar la eficiencia y seguridad con reconocimiento facial, análisis de video y automatización predictiva." },
+    "soundAndLighting": { "title": "Sonido y Control de Iluminación", "description": "Creación de ambientes inteligentes con sistemas de sonido ambiental y control de iluminación automatizado." },
+    "videoIntercom": { "title": "Video Citofonía", "description": "Modernos sistemas que combinan seguridad, comodidad y comunicación efectiva para accesos residenciales y corporativos." },
+    "renewableEnergy": { "title": "Sistemas con Energías Renovables", "description": "Soluciones eléctricas sostenibles que integran tecnología solar fotovoltaica para reducir costos y optimizar el consumo energético." }
+  },
   "contact": {
     "title": "Póngase en Contacto",
-    "subtitle": "Estamos listos para ayudarle. Rellene el formulario o contáctenos directamente."
+    "subtitle": "Estamos listos para ayudarle. Rellene el formulario o contáctenos directamente.",
+     "info": {
+      "title": "Información de Contacto",
+      "description": "Estamos ubicados en el corazón de Boyacá, listos para atenderle. Hablemos de cómo podemos ayudarle en su próximo proyecto.",
+      "phone": "+57 300 123 4567 (Ejemplo)",
+      "email": "contacto@ludaut.com (Ejemplo)",
+      "address": "Duitama, Boyacá, Colombia (Ejemplo)"
+    },
+    "form": {
+      "name": "Nombre",
+      "email": "Correo Electrónico",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje"
+    }
   },
   "footer": {
-    "copy": "© 2025 Ludaut Automatización y Seguridad. Todos los derechos reservados."
+    "copy": "© 2025 Ludaut Automatización y Seguridad SAS. Todos los derechos reservados."
   }
 }

@@ -11,11 +11,66 @@
     "cta_services": "Our Services",
     "cta_contact": "Request a Consultation"
   },
+  "about": {
+    "title": "Who We Are",
+    "description": "Ludaut Automation and Security SAS is a company focused on electronic security, automation, and systems integration across various sectors such as hospitality, restaurant, recreational, commercial, tourism, residential, and industrial, with almost 5 years of experience. We believe that the security and well-being of our clients are the foundation for building tomorrow.",
+    "mission": {
+      "title": "Our Mission",
+      "text": "To design, install, and maintain cutting-edge protection and automation technologies, creating personalized experiences that inspire trust, foster lasting relationships, and allow our clients to operate with complete peace of mind and efficiency."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "text": "To be a benchmark in Latin America for comprehensive electronic security solutions, where innovation and closeness to our clients transform their spaces into intelligent, reliable environments prepared for future challenges."
+    },
+    "values": {
+      "title": "Our Corporate Values",
+      "innovation": { "title": "Innovation", "text": "We stay at the forefront of technology, exploring and applying disruptive solutions that anticipate the needs of our clients." },
+      "responsibility": { "title": "Responsibility", "text": "We place our clients at the center of the project, listening actively and building alliances based on empathy and trust." },
+      "professionalism": { "title": "Professionalism", "text": "We act with integrity and discipline, ensuring transparent and honest treatment with our clients and collaborators." },
+      "excellence": { "title": "Excellence", "text": "We seek the highest quality in our processes and results, optimizing resources and exceeding expectations." },
+      "commitment": { "title": "Commitment", "text": "Our passion is to protect what our clients value most, designing robust and reliable solutions." },
+      "adaptability": { "title": "Adaptability", "text": "We adjust with agility to technological changes and the particularities of each client, offering quick and effective responses." }
+    },
+    "founders": {
+      "title": "Meet Our Founders",
+      "text": "Founded by three engineers passionate about technology, Ludaut was born from the desire to offer a new way of approaching security: closer, more human, and tailored to your needs. In every project, we seek to build relationships of trust to grow together and protect what is most valuable: your peace of mind.",
+      "role": "General Manager",
+      "alt": "Founders of Ludaut"
+    }
+  },
+  "services": {
+    "title": "Our Solutions",
+    "subtitle": "We offer a wide range of integrated services to guarantee your security and optimize your operations.",
+    "cctv": { "title": "CCTV - Video Surveillance", "description": "High-definition camera systems, night vision, and remote access for real-time monitoring from any device." },
+    "accessControl": { "title": "Access and Personnel Control", "description": "Specialized solutions to manage entry to facilities using biometrics, RFID, and facial recognition." },
+    "fireDetection": { "title": "Fire Detection and Prevention", "description": "Systems compliant with the highest quality standards to ensure early detection and response to fires." },
+    "intrusionSystems": { "title": "Intrusion Systems", "description": "Real-time detection of unauthorized access through motion sensors, magnetic contacts, and infrared barriers." },
+    "systemsIntegrator": { "title": "Systems Integrator (BMS/VMS)", "description": "We unify multiple technological systems (BMS, VMS, EMS) into a single, intelligent operational environment." },
+    "domotics": { "title": "Domotics & Building Automation", "description": "We transform residential and corporate spaces into intelligent, efficient, and adaptive environments." },
+    "networking": { "title": "Networks and Structured Cabling", "description": "Design and installation of solid, organized, and scalable network infrastructures according to international standards." },
+    "ai": { "title": "Artificial Intelligence", "description": "We apply AI to enhance efficiency and security through facial recognition, video analysis, and predictive automation." },
+    "soundAndLighting": { "title": "Sound and Lighting Control", "description": "Creation of intelligent environments with ambient sound systems and automated lighting control." },
+    "videoIntercom": { "title": "Video Intercoms", "description": "Modern systems that combine security, comfort, and effective communication for residential and corporate access." },
+    "renewableEnergy": { "title": "Renewable Energy Systems", "description": "Sustainable electrical solutions that integrate solar photovoltaic technology to reduce costs and optimize energy consumption." }
+  },
   "contact": {
     "title": "Get in Touch",
-    "subtitle": "We are ready to help you. Fill out the form or contact us directly."
+    "subtitle": "We are ready to help you. Fill out the form or contact us directly.",
+    "info": {
+      "title": "Contact Information",
+      "description": "We are located in the heart of Boyacá, ready to serve you. Let's talk about how we can help you with your next project.",
+      "phone": "+57 300 123 4567 (Placeholder)",
+      "email": "contacto@ludaut.com (Placeholder)",
+      "address": "Duitama, Boyacá, Colombia (Placeholder)"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message"
+    }
   },
   "footer": {
-    "copy": "© 2025 Ludaut Automation & Security. All rights reserved."
+    "copy": "© 2025 Ludaut Automation & Security SAS. All rights reserved."
   }
 }
