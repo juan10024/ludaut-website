@@ -1,3 +1,10 @@
+/**
+ * @file ScrollReveal.tsx
+ * @description Componente reutilizable que anima a sus hijos cuando entran en el viewport,
+ * utilizando el código proporcionado para una integración perfecta con el proyecto existente.
+ * @author Juan Valderrama
+ * @date 2024-05-17
+ */
 import { motion, useInView, useAnimation } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import type { ReactNode } from 'react';
@@ -9,11 +16,11 @@ interface ScrollRevealProps {
 }
 
 /**
- * A reusable wrapper component that animates its children when they enter the viewport.
- * It uses framer-motion's useInView hook for efficient scroll detection.
- * @param {ReactNode} children - The content to be animated.
- * @param {number} [delay=0] - The delay in seconds before the animation starts.
- * @param {string} [className] - Optional CSS classes to apply to the container.
+ * Un componente contenedor reutilizable que anima a sus hijos cuando entran en el viewport.
+ * Utiliza el hook useInView de framer-motion para una detección de scroll eficiente.
+ * @param {ReactNode} children - El contenido a animar.
+ * @param {number} [delay=0] - El retraso en segundos antes de que comience la animación.
+ * @param {string} [className] - Clases CSS opcionales para aplicar al contenedor.
  */
 const ScrollReveal = ({ children, delay = 0, className }: ScrollRevealProps) => {
   const ref = useRef(null);
@@ -35,7 +42,7 @@ const ScrollReveal = ({ children, delay = 0, className }: ScrollRevealProps) => 
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.6, delay: delay, ease: 'easeOut' }}
+        transition={{ duration: 0.5, delay: delay }}
       >
         {children}
       </motion.div>

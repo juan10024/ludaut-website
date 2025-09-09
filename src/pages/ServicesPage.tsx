@@ -1,85 +1,133 @@
-import { motion } from 'framer-motion';
-import type { Variants } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
-import { Video, KeyRound, Siren, Building2, Bot, Network, Lightbulb, UserCheck, Tv, Wind, Volume2 } from 'lucide-react';
-import React from 'react';
+/**
+ * @file ServicesPage.tsx
+ * @description Muestra los servicios ofrecidos por la empresa. Las claves de texto se han actualizado
+ * para coincidir con los archivos de traducción y se han asignado iconos relevantes.
+ * @author Tu Nombre / Nombre de tu Empresa
+ * @date 2024-05-17
+ */
 
-// Define the type for a service item
+import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+// NOTE: Asegúrate de tener 'lucide-react' instalado: npm install lucide-react
+import {
+  Video,
+  KeyRound,
+  Siren,
+  Building2,
+  Network,
+  Flame,
+  Lightbulb,
+  UserCheck,
+  Zap,
+} from 'lucide-react';
+import React from 'react';
+import ScrollReveal from '../components/common/ScrollReveal';
+import WhatsAppButton from '../components/common/WhatsAppButton';
+
+// Definición del tipo para un elemento de servicio
 interface Service {
-    icon: React.ReactElement;
-    titleKey: string;
-    descriptionKey: string;
+  icon: React.ReactElement;
+  titleKey: string;
+  descriptionKey: string;
 }
 
 /**
- * A reusable component for creating visually appealing section titles.
+ * Componente reutilizable para los títulos de sección.
  */
 const SectionTitle = ({ children, subtitle }: { children: React.ReactNode, subtitle: string }) => (
-    <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold inline-block relative mb-4">
-            {children}
-            <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-primary rounded-full"></span>
-        </h1>
-        <p className="max-w-2xl mx-auto text-lg text-secondary mt-6">{subtitle}</p>
-    </div>
+  <div className="text-center mb-16">
+    <h1 className="text-4xl md:text-5xl font-bold inline-block relative mb-4 text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-500 pb-2">
+      {children}
+      <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-primary rounded-full"></span>
+    </h1>
+    <p className="max-w-3xl mx-auto text-lg text-secondary mt-6">{subtitle}</p>
+  </div>
 );
 
-
 /**
- * The Services page.
- * Displays a grid of cards with enhanced hover effects.
+ * La página de Servicios.
+ * Muestra una cuadrícula de tarjetas de servicios con efectos visuales y animaciones.
  */
 const ServicesPage = () => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
-    const services: Service[] = [
-        { icon: <Video size={32} className="text-primary" />, titleKey: 'services.cctv.title', descriptionKey: 'services.cctv.description' },
-        { icon: <UserCheck size={32} className="text-primary" />, titleKey: 'services.accessControl.title', descriptionKey: 'services.accessControl.description' },
-        { icon: <Siren size={32} className="text-primary" />, titleKey: 'services.fireDetection.title', descriptionKey: 'services.fireDetection.description' },
-        { icon: <KeyRound size={32} className="text-primary" />, titleKey: 'services.intrusionSystems.title', descriptionKey: 'services.intrusionSystems.description' },
-        { icon: <Building2 size={32} className="text-primary" />, titleKey: 'services.systemsIntegrator.title', descriptionKey: 'services.systemsIntegrator.description' },
-        { icon: <Lightbulb size={32} className="text-primary" />, titleKey: 'services.domotics.title', descriptionKey: 'services.domotics.description' },
-        { icon: <Network size={32} className="text-primary" />, titleKey: 'services.networking.title', descriptionKey: 'services.networking.description' },
-        { icon: <Bot size={32} className="text-primary" />, titleKey: 'services.ai.title', descriptionKey: 'services.ai.description' },
-        { icon: <Volume2 size={32} className="text-primary" />, titleKey: 'services.soundAndLighting.title', descriptionKey: 'services.soundAndLighting.description' },
-        { icon: <Tv size={32} className="text-primary" />, titleKey: 'services.videoIntercom.title', descriptionKey: 'services.videoIntercom.description' },
-        { icon: <Wind size={32} className="text-primary" />, titleKey: 'services.renewableEnergy.title', descriptionKey: 'services.renewableEnergy.description' },
-    ];
+  // FIX: Se actualizó el array de servicios para que coincida con las claves de los archivos de traducción
+  const services: Service[] = [
+    {
+      icon: <Video size={36} className="text-primary" />,
+      titleKey: 'services.cctv.title',
+      descriptionKey: 'services.cctv.description',
+    },
+    {
+      icon: <KeyRound size={36} className="text-primary" />,
+      titleKey: 'services.accessControl.title',
+      descriptionKey: 'services.accessControl.description',
+    },
+    {
+      icon: <Siren size={36} className="text-primary" />,
+      titleKey: 'services.alarms.title',
+      descriptionKey: 'services.alarms.description',
+    },
+    {
+      icon: <Building2 size={36} className="text-primary" />,
+      titleKey: 'services.automation.title',
+      descriptionKey: 'services.automation.description',
+    },
+    {
+      icon: <Network size={36} className="text-primary" />,
+      titleKey: 'services.structuredCabling.title',
+      descriptionKey: 'services.structuredCabling.description',
+    },
+    {
+      icon: <Flame size={36} className="text-primary" />,
+      titleKey: 'services.fireDetection.title',
+      descriptionKey: 'services.fireDetection.description',
+    },
+    {
+      icon: <Lightbulb size={36} className="text-primary" />,
+      titleKey: 'services.lighting.title',
+      descriptionKey: 'services.lighting.description',
+    },
+    {
+      icon: <UserCheck size={36} className="text-primary" />,
+      titleKey: 'services.videoIntercom.title',
+      descriptionKey: 'services.videoIntercom.description',
+    },
+    {
+      icon: <Zap size={36} className="text-primary" />,
+      titleKey: 'services.renewableEnergy.title',
+      descriptionKey: 'services.renewableEnergy.description',
+    },
+  ];
 
-    /**
-     * Defines the animation variants for the service cards.
-     * Explicitly typed with the `Variants` type from framer-motion to prevent type errors.
-     */
-    const cardVariants: Variants = {
-        hidden: { opacity: 0, y: 30 },
-        visible: (i: number) => ({
-            opacity: 1,
-            y: 0,
-            transition: { delay: i * 0.08, duration: 0.5, ease: "easeOut" },
-        }),
-    };
-
-    return (
-        <motion.div initial="hidden" animate="visible">
-            <SectionTitle subtitle={t('services.subtitle')}>{t('services.title')}</SectionTitle>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {services.map((service, index) => (
-                    <motion.div
-                        key={service.titleKey}
-                        className="group relative p-8 rounded-xl shadow-md bg-light-bg dark:bg-gray-800 overflow-hidden border border-gray-200 dark:border-gray-700"
-                        variants={cardVariants}
-                        custom={index}
-                        whileHover={{ y: -8, scale: 1.03, transition: { type: "spring", stiffness: 300 } }}
-                    >
-                        <div className="absolute top-0 left-0 w-0 h-1 bg-primary transition-all duration-500 group-hover:w-full"></div>
-                        <div className="mb-4">{service.icon}</div>
-                        <h3 className="text-xl font-bold mb-3">{t(service.titleKey)}</h3>
-                        <p className="text-secondary leading-relaxed">{t(service.descriptionKey)}</p>
-                    </motion.div>
-                ))}
+  return (
+    <motion.div
+      className="container mx-auto px-4 py-20"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <ScrollReveal>
+        <SectionTitle subtitle={t('services.subtitle')}>{t('services.title')}</SectionTitle>
+      </ScrollReveal>
+      
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {services.map((service, index) => (
+          <ScrollReveal key={service.titleKey} delay={index * 0.05}>
+            <div className="group relative h-full flex flex-col p-8 rounded-xl shadow-md bg-light-bg dark:bg-gray-800 overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-primary/20 hover:border-primary/50 hover:-translate-y-0.5">
+              <div className="absolute top-0 left-0 w-0 h-1 bg-primary transition-all duration-500 group-hover:w-full"></div>
+              <div className="mb-5">{service.icon}</div>
+              <h3 className="text-xl font-bold mb-3">{t(service.titleKey)}</h3>
+              <p className="text-secondary leading-relaxed flex-grow">{t(service.descriptionKey)}</p>
             </div>
-        </motion.div>
-    );
+          </ScrollReveal>
+        ))}
+      </div>
+
+      <WhatsAppButton />
+    </motion.div>
+  );
 };
 
 export default ServicesPage;

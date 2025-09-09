@@ -6,14 +6,21 @@
     "contact": "Contacto"
   },
   "home": {
-    "heroTitle": "Automatización Inteligente, Seguridad Infranqueable.",
+    "heroTitle": {
+      "line1": "Automatización Inteligente",
+      "line2": "Seguridad Infranqueable."
+    },
     "heroSubtitle": "Potenciamos la eficiencia y protección de su empresa con soluciones tecnológicas a medida.",
     "cta_services": "Nuestros Servicios",
-    "cta_contact": "Solicitar Consulta"
+    "cta_contact": "Solicitar Consulta",
+    "partnersTitle": "Nuestros Socios"
   },
   "about": {
     "title": "Quiénes Somos",
-    "description": "Ludaut Automatización y Seguridad SAS es una empresa enfocada en la seguridad electrónica, automatización e integración de sistemas en diferentes sectores como el hotelero, restaurantero, recreacional, comercial, turístico, residencial e industrial, con casi 5 años de experiencia. Creemos que la seguridad y el bienestar de nuestros clientes son la base para construir el mañana.",
+    "history": {
+      "title": "Nuestra Historia",
+      "text": "Ludaut Automatización y Seguridad SAS es una empresa enfocada en la seguridad electrónica, automatización e integración de sistemas en diferentes sectores como el hotelero, restaurantero, recreacional, comercial, turístico, residencial e industrial, con casi 5 años de experiencia. Creemos que la seguridad y el bienestar de nuestros clientes son la base para construir el mañana."
+    },
     "mission": {
       "title": "Nuestra Misión",
       "text": "Diseñar, instalar y mantener tecnologías de punta en protección y automatización, creando experiencias personalizadas que inspiren confianza, fomenten relaciones duraderas y permitan a nuestros clientes operar con total tranquilidad y eficiencia."
@@ -22,43 +29,86 @@
       "title": "Nuestra Visión",
       "text": "Ser referentes en Latinoamérica en soluciones de seguridad electrónica integrales, donde la innovación y la cercanía con nuestros clientes transformen sus espacios en entornos inteligentes, confiables y preparados para los desafíos del futuro."
     },
-     "values": {
-      "title": "Nuestros Valores Corporativos",
-      "innovation": { "title": "Innovación", "text": "Nos mantenemos a la vanguardia de la tecnología, explorando y aplicando soluciones disruptivas que anticipen las necesidades de nuestros clientes." },
-      "responsibility": { "title": "Responsabilidad", "text": "Ponemos a nuestros clientes en el centro del proyecto, escuchamos activamente y construimos alianzas basadas en la empatía y la confianza." },
-      "professionalism": { "title": "Profesionalismo", "text": "Actuamos con integridad y disciplina, garantizando un trato transparente y honesto con nuestros clientes y colaboradores." },
-      "excellence": { "title": "Excelencia", "text": "Buscamos la máxima calidad en nuestros procesos y resultados, optimizando recursos y superando expectativas." },
-      "commitment": { "title": "Compromiso", "text": "Nuestra pasión es proteger lo que más valoran nuestros clientes, diseñando soluciones robustas y confiables." },
-      "adaptability": { "title": "Adaptabilidad", "text": "Nos ajustamos con agilidad a los cambios tecnológicos y a las particularidades de cada cliente, ofreciendo respuestas rápidas y efectivas." }
+    "values": {
+      "title": "Nuestros Valores",
+      "innovation": {
+        "title": "Innovación",
+        "text": "Buscamos y aplicamos las últimas tecnologías para ofrecer soluciones de vanguardia."
+      },
+      "commitment": {
+        "title": "Compromiso",
+        "text": "Nos dedicamos al éxito y la satisfacción de nuestros clientes."
+      },
+      "integrity": {
+        "title": "Integridad",
+        "text": "Actuamos con honestidad y transparencia en todas nuestras interacciones."
+      },
+      "excellence": {
+        "title": "Excelencia",
+        "text": "Nos esforzamos por superar las expectativas en cada proyecto."
+      },
+      "teamwork": {
+        "title": "Trabajo en equipo",
+        "text": "Colaboramos para alcanzar metas comunes y potenciar nuestros talentos."
+      },
+      "proactivity": {
+        "title": "Proactividad",
+        "text": "Nos anticipamos a las necesidades de nuestros clientes para ofrecer soluciones oportunas y eficaces."
+      }
     },
     "founders": {
-      "title": "Conoce a Nuestros Fundadores",
-      "text": "Fundada por tres ingenieros apasionados por la tecnología, Ludaut nació del deseo de afrontar la seguridad de una forma más cercana, humana y diseñada a la medida de sus necesidades. En cada proyecto, buscamos construir relaciones de confianza para crecer juntos y proteger lo más valioso: su tranquilidad.",
-      "role": "Gerente General",
-      "alt": "Fundadores de Ludaut"
+      "title": "Nuestros Fundadores",
+      "text": "Nuestro compromiso es transformar los espacios en entornos inteligentes y seguros, donde la tecnología trabaje para las personas.",
+      "alt": "Foto de Jordy Julián Pedraza, CEO y Fundador"
     }
   },
   "services": {
-    "title": "Nuestras Soluciones",
-    "subtitle": "Ofrecemos una amplia gama de servicios integrados para garantizar su seguridad y optimizar sus operaciones.",
-    "cctv": { "title": "CCTV - Video Vigilancia", "description": "Sistemas de cámaras de alta definición, visión nocturna y acceso remoto para supervisión en tiempo real desde cualquier dispositivo." },
-    "accessControl": { "title": "Control de Acceso y de Personal", "description": "Soluciones especializadas para gestionar el ingreso a instalaciones con biometría, RFID y reconocimiento facial." },
-    "fireDetection": { "title": "Detección y Prevención de Incendios", "description": "Sistemas que cumplen con los más altos estándares de calidad para garantizar la detección temprana y respuesta ante incendios." },
-    "intrusionSystems": { "title": "Sistemas de Intrusión", "description": "Detección en tiempo real de accesos no autorizados mediante sensores de movimiento, contactos magnéticos y barreras infrarrojas." },
-    "systemsIntegrator": { "title": "Integrador de Sistemas (BMS/VMS)", "description": "Unificamos múltiples sistemas tecnológicos (BMS, VMS, EMS) en un solo entorno operativo inteligente." },
-    "domotics": { "title": "Domótica e Inmótica", "description": "Transformamos espacios residenciales y corporativos en entornos inteligentes, eficientes y adaptativos." },
-    "networking": { "title": "Redes y Cableado Estructurado", "description": "Diseño e instalación de infraestructuras de red sólidas, organizadas y escalables bajo estándares internacionales." },
-    "ai": { "title": "Inteligencia Artificial", "description": "Aplicamos IA para potenciar la eficiencia y seguridad con reconocimiento facial, análisis de video y automatización predictiva." },
-    "soundAndLighting": { "title": "Sonido y Control de Iluminación", "description": "Creación de ambientes inteligentes con sistemas de sonido ambiental y control de iluminación automatizado." },
-    "videoIntercom": { "title": "Video Citofonía", "description": "Modernos sistemas que combinan seguridad, comodidad y comunicación efectiva para accesos residenciales y corporativos." },
-    "renewableEnergy": { "title": "Sistemas con Energías Renovables", "description": "Soluciones eléctricas sostenibles que integran tecnología solar fotovoltaica para reducir costos y optimizar el consumo energético." }
+    "title": "Nuestros Servicios",
+    "subtitle": "Ofrecemos una amplia gama de soluciones personalizadas para satisfacer sus necesidades de seguridad y automatización.",
+    "cctv": {
+      "title": "Sistemas de CCTV",
+      "description": "Soluciones de vigilancia en alta definición con acceso remoto y analítica inteligente para proteger sus bienes 24/7."
+    },
+    "accessControl": {
+      "title": "Control de Acceso",
+      "description": "Sistemas biométricos y de tarjetas para gestionar y monitorear el acceso a sus instalaciones de forma segura y eficiente."
+    },
+    "alarms": {
+      "title": "Alarmas de Intrusión",
+      "description": "Sistemas de alarmas inteligentes con notificaciones inmediatas a su dispositivo móvil, brindando una respuesta inmediata ante cualquier evento."
+    },
+    "automation": {
+      "title": "Automatización de Edificios",
+      "description": "Integración de sistemas de iluminación, climatización y seguridad para crear edificios inteligentes y eficientes que se adaptan a sus necesidades."
+    },
+    "structuredCabling": {
+      "title": "Cableado Estructurado",
+      "description": "Diseño e instalación de redes de voz y datos que garantizan una infraestructura de comunicación robusta y confiable."
+    },
+    "fireDetection": {
+      "title": "Detección de Incendios",
+      "description": "Sistemas de detección temprana que protegen vidas y activos, cumpliendo con los más altos estándares de seguridad."
+    },
+    "lighting": {
+      "title": "Control de Iluminación",
+      "description": "Creación de ambientes dinámicos y eficientes mediante el control automatizado de la iluminación."
+    },
+    "videoIntercom": {
+      "title": "Video Porteros",
+      "description": "Modernos sistemas que combinan seguridad, comodidad y comunicación efectiva para accesos residenciales y corporativos."
+    },
+    "renewableEnergy": {
+      "title": "Sistemas con Energías Renovables",
+      "description": "Soluciones eléctricas sostenibles que integran tecnología solar fotovoltaica para reducir costos y optimizar el consumo energético."
+    }
   },
   "contact": {
     "title": "Póngase en Contacto",
     "subtitle": "Estamos listos para ayudarle. Rellene el formulario o contáctenos directamente.",
-     "info": {
-      "title": "Información de Contacto",
-      "description": "Estamos ubicados en el corazón de Boyacá, listos para atenderle. Hablemos de cómo podemos ayudarle en su próximo proyecto.",
+    "info": {
+      "emailTitle": "Escríbenos",
+      "phoneTitle": "Llámanos",
+      "addressTitle": "Encuéntranos",
       "phone": "+57 322 481 0181",
       "email": "ludautautomatiacionyseguridad@gmail.com",
       "address": "Duitama - Tunja - Paipa - Sogamoso, Boyacá, Colombia"
@@ -68,18 +118,18 @@
       "email": "Correo Electrónico",
       "message": "Mensaje",
       "submit": "Enviar Mensaje",
-       "validation": {
+      "validation": {
         "required": "El campo {{field}} es obligatorio",
         "email": "Por favor, introduce una dirección de correo válida"
       },
       "status": {
         "sending": "Enviando...",
         "success": "¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.",
-        "error": "Ocurrió un error. Por favor, inténtalo de nuevo más tarde."
+        "error": "Ocurrió un error. Por favor, inténtelo de nuevo."
       }
     }
   },
-  "footer": {
-    "copy": "© 2025 Ludaut Automatización y Seguridad SAS. Todos los derechos reservados."
+    "footer": {
+    "copy": "© 2025 Ludaut Automatización & Seguridad SAS. Todos los derechos reservados."
   }
 }
