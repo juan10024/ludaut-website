@@ -59,15 +59,24 @@
     "info": {
       "title": "Contact Information",
       "description": "We are located in the heart of Boyacá, ready to serve you. Let's talk about how we can help you with your next project.",
-      "phone": "+57 300 123 4567 (Placeholder)",
-      "email": "contacto@ludaut.com (Placeholder)",
-      "address": "Duitama, Boyacá, Colombia (Placeholder)"
+      "phone": "+57 322 481 0181",
+      "email": "ludautautomatiacionyseguridad@gmail.com",
+      "address": "Duitama - Tunja - Paipa - Sogamoso, Boyacá, Colombia"
     },
     "form": {
       "name": "Name",
       "email": "Email",
       "message": "Message",
-      "submit": "Send Message"
+      "submit": "Send Message",
+      "validation": {
+        "required": "{{field}} is required",
+        "email": "Please enter a valid email address"
+      },
+      "status": {
+        "sending": "Sending...",
+        "success": "Message sent successfully! We'll be in touch soon.",
+        "error": "An error occurred. Please try again later."
+      }
     }
   },
   "footer": {
