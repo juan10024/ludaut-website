@@ -1,11 +1,11 @@
 /**
  * @file HomePage.tsx
- * @description Main landing page with a hero section, animated partners carousel,
- * and a subtle 3D animated background.
- * @author Juan Valderrama
+ * @description Main landing page with hero section, responsive typography adjustments,
+ * faster partner logo animation on mobile, and subtle 3D animated background.
  * @date 2025-09-09
  */
 
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -26,9 +26,25 @@ import PowestLogo from '../assets/logos/powest.png';
 import ZktecoLogo from '../assets/logos/ZKTECO.png';
 
 /**
- * Continuous marquee for partner logos with horizontal scrolling animation.
+ * Continuous marquee for partner logos with responsive animation speed.
  */
 const PartnersMarquee = () => {
+  const [duration, setDuration] = useState(40); // default for desktop
+
+  useEffect(() => {
+    const updateDuration = () => {
+      if (window.innerWidth < 768) {
+        setDuration(20); // faster on mobile
+      } else {
+        setDuration(40);
+      }
+    };
+
+    updateDuration();
+    window.addEventListener('resize', updateDuration);
+    return () => window.removeEventListener('resize', updateDuration);
+  }, []);
+
   const partners = [
     { name: 'ASecurity', logo: ASecurityLogo },
     { name: 'Bosch', logo: BoschLogo },
@@ -57,7 +73,7 @@ const PartnersMarquee = () => {
           x: ['-100%', '0%'],
           transition: {
             ease: 'linear',
-            duration: 40,
+            duration,
             repeat: Infinity,
           },
         }}
@@ -103,7 +119,7 @@ const HomePage = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <h1 className="text-5xl md:text-7xl font-extrabold mb-4 leading-tight bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent transition-all duration-500 hover:saturate-150">
+          <h1 className="text-4xl md:text-7xl font-extrabold mb-4 leading-tight bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent transition-all duration-500 hover:saturate-150">
             <span className="block">{t('home.heroTitle.line1')}</span>
             <span className="block text-3xl md:text-5xl mt-2 leading-snug">
               {t('home.heroTitle.line2')}
