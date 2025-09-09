@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "home": {
+    "heroTitle": "Intelligent Automation, Unbreachable Security.",
+    "heroSubtitle": "We boost your company's efficiency and protection with customized technological solutions.",
+    "cta_services": "Our Services",
+    "cta_contact": "Request a Consultation"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We are ready to help you. Fill out the form or contact us directly."
+  },
+  "footer": {
+    "copy": "© 2025 Ludaut Automation & Security. All rights reserved."
+  }
+}

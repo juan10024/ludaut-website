@@ -1,3 +1,14 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* TailwindCSS Directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Base styles for the application */
+@layer base {
+  body {
+    @apply bg-light-bg text-light-text dark:bg-dark-bg dark:text-dark-text transition-colors duration-300;
+  }
+}

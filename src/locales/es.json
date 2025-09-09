@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  },
+  "home": {
+    "heroTitle": "Automatización Inteligente, Seguridad Infranqueable.",
+    "heroSubtitle": "Potenciamos la eficiencia y protección de su empresa con soluciones tecnológicas a medida.",
+    "cta_services": "Nuestros Servicios",
+    "cta_contact": "Solicitar Consulta"
+  },
+  "contact": {
+    "title": "Póngase en Contacto",
+    "subtitle": "Estamos listos para ayudarle. Rellene el formulario o contáctenos directamente."
+  },
+  "footer": {
+    "copy": "© 2025 Ludaut Automatización y Seguridad. Todos los derechos reservados."
+  }
+}
