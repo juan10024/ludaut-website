@@ -9,8 +9,8 @@ import { ThreeDBackground } from '../components/ui/ThreeDBackground';
  */
 const PartnersMarquee = () => {
   const partners = [
-    { name: 'Suprema', logo: 'https://placehold.co/120x40/ffffff/9ca3af?text=Suprema' },
-    { name: 'ZKTeco', logo: 'https://placehold.co/120x40/ffffff/9ca3af?text=ZKTeco' },
+    { name: 'Suprema', logo: 'https://placehold.co/120x40/ffffff/9ca3af?text=Intelbras' },
+    { name: 'ZKTeco', logo: 'https://icon2.cleanpng.com/20180516/jkw/kisspng-biometrics-access-control-zkteco-time-and-attendan-5afbeed8af8da0.4262760015264601207191.jpg' },
     { name: 'Hikvision', logo: 'https://placehold.co/120x40/ffffff/9ca3af?text=Hikvision' },
     { name: 'Hochiki', logo: 'https://placehold.co/120x40/ffffff/9ca3af?text=Hochiki' },
     { name: 'Honeywell', logo: 'https://placehold.co/120x40/ffffff/9ca3af?text=Honeywell' },

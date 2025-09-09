@@ -20,7 +20,7 @@ export const useCustomCursor = () => {
 
     const mousePos = { x: -100, y: -100 };
     const targetPos = { x: -100, y: -100 };
-    const lerpFactor = 0.1; // Controls the smoothness (lower is smoother/slower)
+    const lerpFactor = 0.6; // Controls the smoothness (lower is smoother/slower)
 
     const updatePosition = (e: MouseEvent) => {
       targetPos.x = e.clientX;
