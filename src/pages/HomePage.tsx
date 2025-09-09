@@ -19,7 +19,7 @@ import BoschLogo from '../assets/logos/Bosch.png';
 import DahuaLogo from '../assets/logos/Dahua.png';
 import HikvisionLogo from '../assets/logos/Hikvision.png';
 import HilookLogo from '../assets/logos/Hilook.png';
-import HochikiLogo from '../assets/logos/Hochiki.png';
+import HochikiLogo from '../assets/logos/hochiki.png';
 import HoneywellLogo from '../assets/logos/Honeywell.png';
 import IntelbrasLogo from '../assets/logos/intelbras.png';
 import PowestLogo from '../assets/logos/powest.png';
