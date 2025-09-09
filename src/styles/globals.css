@@ -11,4 +11,46 @@
   body {
     @apply bg-light-bg text-light-text dark:bg-dark-bg dark:text-dark-text transition-colors duration-300;
   }
+
+  /* Cursor Reveal Effect */
+  #root > div {
+    background: radial-gradient(
+      600px at calc(var(--mouse-x, 0) * 1px) calc(var(--mouse-y, 0) * 1px),
+      rgba(13, 110, 253, 0.10),
+      transparent 80%
+    );
+  }
+}
+
+/* Custom Cursor Styling */
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #0D6EFD;
+  transition: width 0.3s, height 0.3s, background-color 0.3s, border-color 0.3s;
+}
+
+.custom-cursor.dark {
+  border-color: #F8F9FA;
+}
+
+.custom-cursor.hovering {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(13, 110, 253, 0.2);
+}
+
+.custom-cursor.dark.hovering {
+  background-color: rgba(248, 249, 250, 0.2);
+}
+
+
+/* Partners Marquee Animation */
+.marquee-content {
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
 }
